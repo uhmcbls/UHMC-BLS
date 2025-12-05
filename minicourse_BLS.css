@@ -31,6 +31,8 @@ section, header, .lesson-box {
 }
 
 .navbar {
+  position: relative;
+  z-index: 9999;
   display: flex;
   align-items: center;
   padding: 20px 50px;
@@ -230,7 +232,7 @@ section, header, .lesson-box {
   .nav-links {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 110px;
     right: 20px;
     width: 230px;
     flex-direction: column;
@@ -266,8 +268,16 @@ section, header, .lesson-box {
   .button-label { font-size: 2.2rem; }
 
   .logo { width: 85px; }
-  .logo-label { font-size: 1rem; line-height: 1.3rem; }
-  .logo-label2 { font-size: 1.1rem; }
+.logo-label {
+  font-size: 0.95rem;
+  line-height: 1.1rem;
+  font-weight: 700;
+}
+
+.logo-label2 {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
 
   .lesson-step p { font-size: 1rem; }
   .step-number { width: 45px; height: 45px; font-size: 1.4rem; }
