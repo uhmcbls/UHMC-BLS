@@ -1,0 +1,283 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7fbff;
+  overflow-x: hidden;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* fade-in animation */
+section, header {
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= HERO / NAVBAR ================= */
+.hero-section {
+  height: 45vh;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url('background_photos/campus2.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  width: 95px;
+}
+
+.logo-label {
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.logo-label2 {
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-left: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+
+  /* MATCH HOME PAGE */
+  transition: background 0.28s ease, color 0.28s ease, transform 0.28s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}
+
+.contact-btn {
+  background: #014f6e;
+  padding: 10px 22px;
+  border-radius: 22px;
+}
+
+.hamburger {
+  display: none;
+  margin-left: auto;
+  font-size: 2.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------- PAGE TITLE ---------- */
+.page-title {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 4.2rem;
+  font-weight: 700;
+  text-shadow: 0 7px 25px rgba(0,0,0,0.45);
+}
+
+/* ================= MISSION / VISION ================= */
+.mission-section {
+  padding: 120px 20px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-container {
+  display: flex;
+  gap: 40px;
+  width: 85%;
+  max-width: 1200px;
+}
+
+.mission-box {
+  flex: 1;
+  background: rgba(255,255,255,0.9);
+  padding: 40px;
+  border-radius: 22px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+  backdrop-filter: blur(5px);
+
+  /* MATCH HOME PAGE hover */
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.mission-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.17);
+}
+
+.mission-box h2 {
+  color: #014f6e;
+  margin-bottom: 15px;
+}
+
+/* ================= TEAM SECTION ================= */
+.meet-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.meet-section h1 {
+  font-size: 2.6rem;
+  margin-bottom: 40px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.team-box {
+  width: 31%;
+  min-width: 300px;
+  background: rgba(255,255,255,0.95);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+
+  /* MATCH HOME PAGE hover */
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.team-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.16);
+}
+
+.profile-img {
+  width: 160px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 6px 6px 14px rgba(0,0,0,0.15);
+
+  /* subtle hover effect */
+  transition: transform 0.28s ease;
+}
+
+.team-box:hover .profile-img {
+  transform: scale(1.03);
+}
+
+/* ================= FOOTER ================= */
+.footer-section {
+  padding: 40px 0 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  width: 85%;
+  max-width: 1100px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+  /* hover match */
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.footer-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 900px) {
+
+  .nav-links {
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    width: 220px;
+    background: rgba(0,0,0,0.92);
+    display: none;
+    flex-direction: column;
+    text-align: right;
+    padding: 20px;
+    border-radius: 14px;
+    gap: 15px;
+    z-index: 100;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .page-title {
+    font-size: 2.8rem;
+    bottom: 20px;
+  }
+
+  .mission-container {
+    flex-direction: column;
+  }
+
+  .team-box {
+    width: 100%;
+  }
+
+  .team-box:hover {
+    transform: none; /* prevent weird jump on mobile tap */
+  }
+}
+
+@media (max-width: 500px) {
+  .page-title {
+    font-size: 2.2rem;
+  }
+}

@@ -1,0 +1,195 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e8f4ff, #ffffff);
+  color: #222;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+section, header {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= HERO ================= */
+.hero-section {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url('background_photos/campus1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  gap: 20px;
+  position: relative;
+}
+
+.logo-group { display: flex; align-items: center; gap: 15px; }
+.logo { width: 110px; }
+.logo-label { color: white; font-size: 1.3rem; font-weight: 700; line-height: 1.3rem; }
+.logo-label2 { font-size: 1.5rem; font-weight: 800; }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-left: auto;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+.nav-links a:hover {
+  background: rgba(255,255,255,0.25);
+  transform: scale(1.05);
+}
+.contact-btn {
+  background-color: #014f6e;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 50;
+}
+
+/* HERO TEXT */
+.hero-text-group {
+  position: absolute;
+  left: 60px;
+  bottom: 140px;
+}
+.button-label {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 35px;
+  transition: transform 0.25s ease;
+}
+.button-label:hover { transform: scale(1.03); }
+
+.join-btn {
+  margin-top: 20px;
+  padding: 18px 30px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+}
+.join-btn:hover { background: #0040c1; color: white; transform: translateY(-3px); }
+
+/* ================= INTRODUCTION ================= */
+.introduction-wrap,
+.announcements-wrap,
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#introduction {
+  max-width: 1100px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+#introduction:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+}
+
+.motivation {
+  color: #014f6e;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* ================= ANNOUNCEMENTS ================= */
+.announcements-wrap {
+  background: #014f6e;
+  color: white;
+  padding-bottom: 150px;
+}
+.announcements {
+  max-width: 900px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(4px);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.announcements:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.2);
+}
+
+/* ================= BOTTOM ================= */
+.bottom-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 85%;
+  max-width: 1100px;
+}
+.bottom-box {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255,255,255,0.85);
+  padding: 35px;
+  border-radius: 18px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.bottom-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .nav-links { position: absolute; top: 80px; right: 0; background: rgba(0,0,0,0.9); flex-direction: column; width: 220px; padding: 20px; border-radius: 0 0 0 12px; display: none; }
+  .nav-links.nav-active { display: flex; }
+  .hamburger { display: block; }
+  .hero-text-group { left: 20px; bottom: 100px; }
+  .button-label { font-size: 1.8rem; }
+  .join-btn { padding: 15px 24px; font-size: 1rem; }
+  #introduction { padding: 30px; }
+  .motivation { font-size: 36px; }
+  .bottom-container { flex-direction: column; }
+}
+@media (max-width: 500px) {
+  .button-label { font-size: 1.5rem; }
+  .join-btn { font-size: 0.9rem; }
+  .logo { width: 80px; }
+  .logo-label { font-size: 1rem; }
+}

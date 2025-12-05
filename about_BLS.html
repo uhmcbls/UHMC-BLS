@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UHMC Business Leaders Society - About Us</title>
+    <link rel="stylesheet" href="about_BLS.css" />
+</head>
+
+<body>
+
+<!-- ================= HEADER / NAVIGATION ================ -->
+<header class="hero-section">
+    <nav class="navbar">
+        <div class="logo-group">
+            <img src="icons_photos/logo_BLS2.png" alt="BLS Logo" class="logo">
+            <div class="logo-label">
+                UNIVERSITY OF HAWAII MAUI COLLEGE<br>
+                <span class="logo-label2">Business Leaders Society</span>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_BLS.html" class="active">About Us</a></li>
+            <li><a href="minicourse_BLS.html">Mini Course</a></li>
+            <li><a href="initiatives_BLS.html">Initiatives</a></li>
+            <li><a href="contact_BLS.html" class="contact-btn">Contact Us</a></li>
+        </ul>
+
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <h1 class="page-title">About Us</h1>
+</header>
+
+<!-- ================= MISSION & VISION ================ -->
+<section class="mission-section">
+    <div class="mission-container">
+
+        <div class="mission-box">
+            <h2>MISSION</h2>
+            <p>
+                “Empower students with business knowledge, leadership skills, and meaningful
+                connections to prepare them for impactful careers and community leadership.”
+            </p>
+        </div>
+
+        <div class="mission-box">
+            <h2>VISION</h2>
+            <p>
+                “To cultivate a community of driven, innovative, and ethical leaders who inspire
+                positive change in business and society.”
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= MEET THE TEAM TITLE ================ -->
+<section class="meet-section">
+    <h1>Meet the Team</h1>
+
+    <div class="team-container">
+
+        <!-- Lindsey -->
+        <div class="team-box">
+            <img src="individual_photos/lindsey_individual.jpg" alt="Lindsey" class="profile-img">
+            <h2>Lindsey Elkington</h2>
+            <p>
+                I've been lucky enough to call Maui home for a little over five years and
+                currently serve as the Manager of Administrative Operations at Trilogy Excursions.
+                <br><br>
+                When I'm not making sure our crews and behind-the-scenes operations are running
+                smoothly, you can find me outdoors soaking up the sunshine or exploring Maui’s
+                back roads. My partner and I are also gearing up to start our own business.
+            </p>
+        </div>
+
+        <!-- Yukai -->
+        <div class="team-box">
+            <img src="individual_photos/yukai_individual.png" alt="Yukai" class="profile-img">
+            <h2>Yukai Sawada</h2>
+            <p>
+                I'm currently studying business at UHMC. My career goal is to become an
+                entrepreneur and start my own company in the future.
+                <br><br>
+                I love learning about finance and marketing, and I enjoy working with people who
+                share creative ideas. In my free time, I like going to the gym and exploring
+                new hobbies.
+            </p>
+        </div>
+
+        <!-- Jonas -->
+        <div class="team-box">
+            <img src="individual_photos/jonas_individual.jpg" alt="Jonas" class="profile-img">
+            <h2>Jonas Marcial</h2>
+            <p>
+                I'm majoring in ABIT and focusing on the technology side of it. I currently work
+                as a porter for Hawaiian Airlines. My goal is to find a job in IT, then focus on my hobbies:
+                going to the gym, playing piano, and cooking.
+                <br><br>
+                I plan to move to the mainland after I graduate because I like the vibe there right now,
+                but Maui will always be home.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER / CONTACT ================ -->
+<section class="footer-section">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>General Inquiries, Job Postings, and Announcements</h2>
+            <p>Email us at <strong>uhmcbls@gmail.com</strong></p>
+        </div>
+
+        <div class="footer-box">
+            <h2>Newsletter</h2>
+            <p>
+                Become a UHMC BLS member by subscribing to our
+                <a href="contact_BLS.html">mailing list</a>.<br><br>
+            </p>
+            <p>If mail subscription page is down, please email us.</p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>

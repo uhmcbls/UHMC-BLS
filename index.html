@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>UHMC Business Leaders Society - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= HEADER / NAVBAR ================= -->
+<header class="hero-section">
+  <nav class="navbar">
+    <div class="logo-group">
+      <img src="icons_photos/logo_BLS2.png" alt="Logo" class="logo" />
+      <div class="logo-label">
+        UNIVERSITY OF HAWAII MAUI COLLEGE<br />
+        <span class="logo-label2">Business Leaders Society</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about_BLS.html">About Us</a></li>
+      <li><a href="minicourse_BLS.html">Mini Course</a></li>
+      <li><a href="initiatives_BLS.html">Initiatives</a></li>
+      <li><a class="contact-btn" href="contact_BLS.html">Contact Us</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
+
+  <div class="hero-text-group">
+    <div class="button-label">
+      Become a Business Leader by <br> Joining Our Mailing List
+    </div>
+    <a href="contact_BLS.html" class="join-btn">Join Now</a>
+  </div>
+</header>
+
+<!-- ================= INTRODUCTION ================= -->
+<section class="introduction-wrap">
+  <div id="introduction">
+    <h1 class="motivation">Our Motivation</h1>
+    <p>
+      The University of Hawaii Maui College's Business Leaders Society is a
+      club dedicated to providing business education, leadership
+      development, and networking opportunities.<br><br>
+      We bring together motivated students to grow professionally, collaborate with peers, and become
+      influential leaders. Through workshops, guest speakers, mentorship, and hands-on projects,
+      members build confidence, sharpen essential skills, and explore career pathways.
+    </p>
+  </div>
+</section>
+
+<!-- ================= ANNOUNCEMENTS ================= -->
+<section class="announcements-wrap">
+  <div class="announcements">
+    <h1>Announcements</h1>
+    <p>(Announcements will show here)</p>
+  </div>
+</section>
+
+<!-- ================= FOOTER / BOTTOM ================= -->
+<section class="bottom-section">
+  <div class="bottom-container">
+    <div class="bottom-box">
+      <h2>General Inquiries, Job Postings, and Announcements</h2>
+      <p>Please email us at <strong>uhmcbls@gmail.com</strong></p>
+    </div>
+
+    <div class="bottom-box">
+      <h2>Newsletter</h2>
+      <p>
+        To become a UHMC BLS member, please subscribe to our 
+        <a href="contact_BLS.html">mailing list</a>.<br><br>
+        If mail subscription page is down, please email us.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-active");
+    hamburger.classList.toggle("open");
+  });
+</script>
+
+</body>
+</html>
