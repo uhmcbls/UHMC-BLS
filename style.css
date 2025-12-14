@@ -106,10 +106,22 @@ section, header {
 .introduction-wrap,
 .announcements-wrap,
 .bottom-section {
+
   display: flex;
   justify-content: center;
   padding: 80px 0;
   text-align: center;
+}
+
+.blspromotion-img {
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 6px 6px 14px rgba(0,0,0,0.15);
+
+  /* subtle hover effect */
+  transition: transform 0.28s ease;
 }
 
 #introduction {
